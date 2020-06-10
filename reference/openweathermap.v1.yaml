@@ -15,7 +15,7 @@ servers:
   - url: 'https://api.openweathermap.org/data/2.5'
     description: prod
 paths:
-  '/weather/{get-weather}':
+  /weather:
     get:
       summary: weather
       tags:
@@ -251,11 +251,7 @@ paths:
           in: query
           name: mode
           description: '**Mode*. *Example: html. Determines the format of the response. Possible values are `json`, `xml`, and `html`. If the mode parameter is empty, the format is `json` by default.'
-    parameters:
-      - schema:
-          type: string
-        name: get-weather
-        in: path
+    parameters: []
     options:
       summary: ''
       operationId: options-weather
