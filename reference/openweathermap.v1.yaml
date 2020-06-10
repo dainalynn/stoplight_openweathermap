@@ -276,7 +276,7 @@ components:
         - cod
         - message
   securitySchemes:
-    API Key - 1:
-      name: API Key
+    app_id:
+      name: appid
       type: apiKey
       in: query
